@@ -14,6 +14,8 @@ defmodule ElihygWeb.Router do
 
   scope "/api", ElihygWeb do
     pipe_through :api
+
+    get "/arts", ArtsController, :index
   end
 
   # Enables LiveDashboard only for development
